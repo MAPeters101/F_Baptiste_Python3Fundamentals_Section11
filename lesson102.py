@@ -156,6 +156,15 @@ except ValueError as ex:
 finally:
     print('this is always executed')
 print('all done')
+print()
 
+try:
+    raise TypeError('custom message')
+except ValueError as ex:
+    print(f'handled a ValueError: {ex}')
+finally:
+    print('this is always executed')
+print('all done')
+print()
 
 

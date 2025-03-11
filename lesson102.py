@@ -70,6 +70,29 @@ for element in data:
     count_data += 1
 average = sum_data / count_data
 print(average)
+print()
 
+# data = []
+# sum_data = 0
+# count_data = 0
+# for element in data:
+#     sum_data += element
+#     count_data += 1
+# average = sum_data / count_data
+# print(average)
+# print()
+
+data = []
+if len(data) == 0:
+    average = 0
+else:
+    sum_data = 0
+    count_data = 0
+    for element in data:
+        sum_data += element
+        count_data += 1
+    average = sum_data / count_data
+print(average)
+print()
 
 

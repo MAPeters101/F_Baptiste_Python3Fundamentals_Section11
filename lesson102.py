@@ -137,5 +137,18 @@ try:
 except Exception as ex:
     print(f'logging error: {ex}')
 
+print('program still running...')
+print()
+
+try:
+    1 / 0
+except Exception as ex:
+    print(f'logging error: {ex}')
+    raise
 
 print('program still running...')
+print()
+
+
+
+

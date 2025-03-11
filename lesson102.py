@@ -95,4 +95,41 @@ else:
 print(average)
 print()
 
+data = [10, 20, 'abc']
+sum_data = 0
+count_data = 0
+try:
+    for element in data:
+        sum_data += element
+        count_data += 1
+    average = sum_data / count_data
+except ZeroDivisionError:
+    average = 0
+except TypeError:
+    average = 0
+
+print(f'average = {average}')
+print()
+
+
+data = [10, 20, 'abc']
+sum_data = 0
+count_data = 0
+try:
+    for element in data:
+        try:
+            sum_data += element
+            count_data += 1
+        except TypeError:
+            # skip
+            pass
+    average = sum_data / count_data
+except ZeroDivisionError:
+    average = 0
+except TypeError:
+    average = 0
+
+print(f'average = {average}')
+print()
+
 

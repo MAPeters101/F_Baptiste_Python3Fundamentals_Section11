@@ -13,10 +13,20 @@ while len(l) > 0:
 print('all done')
 print('-'*80)
 
+# l = [1,2,3,4,5]
+# while True:
+#     print(l.pop())
+# print('all done')
+# print('-'*80)
+
 l = [1,2,3,4,5]
-while True:
-    print(l.pop())
-print('all done')
+try:
+    while True:
+        print(l.pop())
+except IndexError:
+    # index error means list is now empty - expected behavior
+    print('All done - all elements have been popped.')
+print('code resumes here..')
 print('-'*80)
 
 

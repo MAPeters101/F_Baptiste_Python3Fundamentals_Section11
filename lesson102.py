@@ -158,13 +158,32 @@ finally:
 print('all done')
 print()
 
+# try:
+#     raise TypeError('custom message')
+# except ValueError as ex:
+#     print(f'handled a ValueError: {ex}')
+# finally:
+#     print('this is always executed')
+# print('all done')
+# print()
+
+# try:
+#     raise ValueError('custom message')
+# except ValueError as ex:
+#     print(f'handled a ValueError: {ex}')
+#     raise TypeError('changing to a type error.')
+# finally:
+#     print('this is always executed')
+# print('all done')
+# print()
+
 try:
-    raise TypeError('custom message')
-except ValueError as ex:
-    print(f'handled a ValueError: {ex}')
+    print('Nothing to see here...')
+except ValueError:
+    print('handled a ValueError.')
 finally:
-    print('this is always executed')
-print('all done')
+    print('this always executes')
 print()
+
 
 

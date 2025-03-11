@@ -192,5 +192,12 @@ finally:
     print('this always executes')
 print()
 
+try:
+    print('Nothing to see here...')
+    1/0
+finally:
+    print('this always executes')
+print()
+
 
 

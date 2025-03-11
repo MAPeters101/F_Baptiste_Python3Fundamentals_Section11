@@ -30,4 +30,35 @@ print('code resumes here..')
 print('-'*80)
 
 
+l = [1,2,3,4,5]
+try:
+    while True:
+        print(l.pop())
+except Exception:
+    # what happened? IndexError? something else?
+    print('something unexpected happened.')
+print('code resumes here..')
+print('-'*80)
+
+l = (1,2,3,4,5)
+try:
+    while True:
+        print(l.pop())
+except Exception:
+    # what happened? IndexError? something else?
+    print('All done - all elements have been popped.')
+print('code resumes here..')
+print('-'*80)
+
+l = (1,2,3,4,5)
+try:
+    while True:
+        print(l.pop())
+except IndexError:
+    # index error means list is now empty - expected behavior
+    print('All done - all elements have been popped.')
+print('code resumes here..')
+print('-'*80)
+
+
 

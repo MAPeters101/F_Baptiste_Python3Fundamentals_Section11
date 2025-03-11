@@ -140,15 +140,22 @@ except Exception as ex:
 print('program still running...')
 print()
 
+# try:
+#     1 / 0
+# except Exception as ex:
+#     print(f'logging error: {ex}')
+#     raise
+#
+# print('program still running...')
+# print()
+
 try:
-    1 / 0
-except Exception as ex:
-    print(f'logging error: {ex}')
-    raise
-
-print('program still running...')
-print()
-
+    raise ValueError('custom message')
+except ValueError as ex:
+    print(f'handled a ValueError: {ex}')
+finally:
+    print('this is always executed')
+print('all done')
 
 
 
